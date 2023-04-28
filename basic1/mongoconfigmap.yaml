@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mongo-configmap
+data:
+  database_url: mongo-service     #name of service which will connect to our db pod  servie---->>db  pod
+                                  #run config first before deployment in which it is used 

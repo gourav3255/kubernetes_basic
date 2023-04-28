@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongo-service
+spec:
+  selector:
+    app: mongodb
+  ports:
+  - port: 27017   #service port (both can be different)
+    targetPort: 27017    #port of container should be same with the container port
